@@ -1,0 +1,37 @@
+Name       : hawaii-framework
+Version    : 0.3.90
+Release    : 1
+Group      : System/Libraries
+License    : LGPLv2.1+
+URL        : https://github.com/mauios/hawaii-framework.git
+Summary    : Libraries for the Hawaii desktop environment
+Description: Provides libraries for the Hawaii desktop environment.
+Sources    : 
+    - "%{name}-%{version}.tar.xz"
+SetupOptions: -q -n %{name}-%{version}/upstream
+
+PkgBR:
+    - kf5-rpm-macros
+    - extra-cmake-modules
+    - qt5-tools
+    - kf5-plasma-devel
+
+PkgConfigBR:
+    - Qt5Core
+    - Qt5DBus
+    - Qt5Xml
+    - Qt5Network
+    - Qt5Gui
+    - Qt5Quick
+    - Qt5Qml
+    - Qt5Test
+
+Requires:
+    - qt5-qtquickcontrols
+
+Configure: none
+Builder: none
+
+Files:
+    - "%doc COPYING.LIB README.md"
+    - "%{_kf5_qmldir}/Hawaii/"
