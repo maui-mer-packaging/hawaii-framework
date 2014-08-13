@@ -28,7 +28,7 @@ BuildRequires:  pkgconfig(Qt5Test)
 BuildRequires:  kf5-rpm-macros
 BuildRequires:  extra-cmake-modules
 BuildRequires:  qt5-tools
-BuildRequires:  kf5-plasma-devel
+BuildRequires:  plasma-devel
 
 %description
 Provides libraries for the Hawaii desktop environment.
