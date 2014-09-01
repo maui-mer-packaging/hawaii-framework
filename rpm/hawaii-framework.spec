@@ -9,7 +9,7 @@ Name:       hawaii-framework
 # << macros
 
 Summary:    Libraries for the Hawaii desktop environment
-Version:    0.3.90
+Version:    0.4.0
 Release:    1
 Group:      System/Libraries
 License:    LGPLv2.1+
